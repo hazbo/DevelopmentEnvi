@@ -4,6 +4,7 @@ Just a simple development environment using puppet manifests to install:
 
   - Nginx
   - PHP5 (FPM)
+  - Composer
   - MySQL
   - MongoDB
 
