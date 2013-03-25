@@ -16,6 +16,11 @@ Just a simple development environment using puppet manifests to install:
 
 Depends on Virtualbox and Vagrant.
 
+I'm trying to think of new ways to make setting up a development environment really easy
+so you can just get on with the actual code. The current setup seems to work really well
+with Laravel, so I have added a feature that pulls down the latest version, configures it
+and has you up and running in seconds.
+
 ## Extras
 
 I am currently working on some ways to automate framework creation inside the vagrant machine.
