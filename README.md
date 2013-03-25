@@ -6,7 +6,7 @@ Just a simple development environment using puppet manifests to install:
   - PHP5 (FPM)
   - Composer
   - MySQL
-  - MongoDB
+  - MongoDB w/ PHP Extension
 
 ## Usage
 
@@ -34,4 +34,5 @@ you'll need to change it in Laravel also.
 
 ### Todo:
 
-Remove any extra unused packages.
+  - Remove any extra unused packages.
+  - Resolve issue regarding warning for reload-php-fpm dependency
