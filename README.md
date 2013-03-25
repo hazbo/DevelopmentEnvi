@@ -35,3 +35,8 @@ you'll need to change it in Laravel also.
 ### Todo:
 
   - Resolve issue regarding warning for reload-php-fpm dependency
+
+### Contributing
+
+Please feel free to contribute to this project. I'm no expert in this particular subject
+myself, it's just a fun project for me to work on and I'd appreciate any of your thoughts or help.
