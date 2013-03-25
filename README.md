@@ -34,5 +34,4 @@ you'll need to change it in Laravel also.
 
 ### Todo:
 
-  - Remove any extra unused packages.
   - Resolve issue regarding warning for reload-php-fpm dependency
