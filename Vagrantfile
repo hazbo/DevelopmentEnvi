@@ -10,7 +10,7 @@ Vagrant::Config.run do |config|
   config.ssh.timeout = 300
 
   config.vm.forward_port 80, 4567
-  config.vm.forward_port 3306, 4568
+  config.vm.forward_port 3306, 4569
   config.vm.forward_port 2020, 2020
   config.vm.forward_port 5000, 5000
 

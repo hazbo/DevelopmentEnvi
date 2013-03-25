@@ -2,7 +2,7 @@ server {
         listen   80; ## listen for ipv4; this line is default and implied
         listen   [::]:80 default ipv6only=on; ## listen for ipv6
 
-        root /vagrant/src;
+        root /vagrant/src/public;
         index index.php index.html index.htm;
 
         # Make site accessible from http://localhost/
@@ -14,7 +14,6 @@ server {
                 try_files $uri $uri/ /index.html;
                 # Uncomment to enable naxsi on this location
                 # include /etc/nginx/naxsi.rules
-                rewrite ^/(.*\.(?:css|less|scss|js|coffee|jpg|png|gif|jpeg))$ /munee.php?files=/$1 break;
         }
 
         location /doc/ {
@@ -68,6 +67,5 @@ server {
         location ~* \.(jpg|jpeg|gif|css|png|js|ico|html)$ {
                 access_log off;
                 expires max;
-                rewrite ^/(.*\.(?:css|less|scss|js|coffee|jpg|png|gif|jpeg))$ /munee.php?files=/$1 break;
         }
 }
