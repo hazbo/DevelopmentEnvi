@@ -21,4 +21,5 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Commands below are for DevelopmentEnvi
 alias laravelinstall="cd /vagrant && rm -rf /vagrant/src && git clone https://github.com/laravel/laravel.git src && cp /var/laravel.application.config.php /vagrant/src/application/config/application.php"
