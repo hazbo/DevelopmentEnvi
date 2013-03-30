@@ -23,3 +23,4 @@ fi
 
 # Commands below are for DevelopmentEnvi
 alias laravelinstall="cd /vagrant && rm -rf /vagrant/src && git clone https://github.com/laravel/laravel.git src && cp /var/laravel.application.config.php /vagrant/src/application/config/application.php"
+alias codeigniterinstall="cd /vagrant && rm -rf src && mkdir src && cd src && git clone https://github.com/EllisLab/CodeIgniter.git public"

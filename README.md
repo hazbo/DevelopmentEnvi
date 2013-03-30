@@ -23,19 +23,20 @@ and has you up and running in seconds.
 
 ## Extras
 
-I am currently working on some ways to automate framework creation inside the vagrant machine.
-Starting with Laravel, you can now do the following to have a clean install of Laravel working
-out of the box with all the configuration you need:
+Now allows you to install frameworks out of the box, that work with this setup very well.
+To do so for either `Laravel` or `Code Igniter` you can ssh into your new box:
 
 	$ vagrant ssh
 
-Once inside the box:
+And run the following commands:
 
-	$ laravelinstall
+  - For Laravel
 
-That's it! In this example the port on the vagrant box mapped to `80` is `4567`. This is setup
-in the Laravel `config/application.php` file, so if you change to port in the Vagrant file,
-you'll need to change it in Laravel also.
+  $ laravelinstall
+
+  - For Code Igniter
+
+  $ codeigniterinstall
 
 ### Todo:
 
