@@ -42,6 +42,7 @@ you'll need to change it in Laravel also.
   - Improve directory structure for different types of configuration files that are for frameworks or applications ect..
   - Automate the way frameworks are installed and configured with a database.
   - Add more PHP frameworks e.g. Symfony, CI, Yii ect..
+  - Once user first SSHd into the box, remove a lock file that will not prompt with initial configuration options.
 
 ### Contributing
 
