@@ -41,6 +41,9 @@ And run the following commands:
 Once you have done that, (in this example with our Vagrantfile forwarding port `80` to `4567`) all you
 need to do is locate to `http://localhost:4567` in your browser. Done!
 
+For `Laravel`, there is a configuration file located at `/vagrant/src/public/application/config/application.php` which already has the pre-configured URL
+using port `4567`. If you need to change this in your Vagrant setup, you may need to do so here too.
+
 ### Todo:
 
   - Improve directory structure for different types of configuration files that are for frameworks or applications ect..
