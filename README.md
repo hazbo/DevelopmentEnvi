@@ -37,10 +37,6 @@ That's it! In this example the port on the vagrant box mapped to `80` is `4567`.
 in the Laravel `config/application.php` file, so if you change to port in the Vagrant file,
 you'll need to change it in Laravel also.
 
-### Todo:
-
-  - Resolve issue regarding warning for reload-php-fpm dependency
-
 ### Contributing
 
 Please feel free to contribute to this project. I'm no expert in this particular subject
