@@ -5,13 +5,13 @@ class misc {
   }
 
   exec { 'laravel-config':
-  	cwd => '/var',
+    cwd => '/var',
     command => '/usr/bin/touch laravel.application.config.php',
     require => Exec['preparenetworking']
   }
 
   file { '/var/laravel.application.config.php':
-    source => '/vagrant/provision/modules/misc/files/application.php',
+    source => '/vagrant/provision/modules/misc/files/laravel/application/config/application.php',
     owner => 'root',
     group => 'root',
     require => Exec['laravel-config']

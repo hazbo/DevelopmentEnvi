@@ -1,46 +1,46 @@
-stage {'first':
+stage { 'first':
 	before => Stage[main]
 }
-stage {'ppa':
+stage { 'ppa':
 	before => Stage['first']
 }
-stage {'veryfirst':
+stage { 'veryfirst':
 	before => Stage['ppa']
 }
-stage {'last':
+stage { 'last':
 	require => Stage[main]
 }
-group {'puppet':
+group { 'puppet':
 	ensure => 'present'
 }
-class {'nginx':
+class { 'nginx':
 	stage => first
 }
-class {'dns':
+class { 'dns':
 	stage => veryfirst
 }
-class {'misc':
+class { 'misc':
 	stage => ppa
 }
 
 class sudo {
-	group { "wheel":
-	    ensure => "present",
-	}
+  group { "wheel":
+    ensure => "present",
+  }
 	
-	exec { "/bin/echo \"%wheel  ALL=(ALL) ALL\" >> /etc/sudoers":
+  exec { "/bin/echo \"%wheel  ALL=(ALL) ALL\" >> /etc/sudoers":
 	    require => Group["wheel"]
 	}
 	
-	user { "developer":
-		ensure => "present",
-		gid => "wheel",
-		shell => "/bin/bash",
-		home => "/home/developer",
-		managehome => true,
-		password => "passwordtest",
-		require => Group["wheel"]
-	}
+  user { "developer":
+    ensure => "present",
+    gid => "wheel",
+    shell => "/bin/bash",
+    home => "/home/developer",
+    managehome => true,
+    password => "passwordtest",
+    require => Group["wheel"]
+  }
 }
 
 import "dns"
