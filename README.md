@@ -40,6 +40,8 @@ you'll need to change it in Laravel also.
 ### Todo:
 
   - Improve directory structure for different types of configuration files that are for frameworks or applications ect..
+  - Automate the way frameworks are installed and configured with a database.
+  - Add more PHP frameworks e.g. Symfony, CI, Yii ect..
 
 ### Contributing
 
