@@ -32,11 +32,11 @@ And run the following commands:
 
   - For Laravel
 
-  $ laravelinstall
+		$ laravelinstall
 
   - For Code Igniter
 
-  $ codeigniterinstall
+		$ codeigniterinstall
 
 ### Todo:
 
